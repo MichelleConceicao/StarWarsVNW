@@ -1,0 +1,71 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Comfortaa", cursive;
+    scroll-behavior: smooth;
+  }
+
+header{
+    background-image: url("Imagens/star\ uó\ topo.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+}
+.star{
+    padding-left: 26rem;
+    padding-top: 28rem;
+    width: 50%;
+    justify-content: space-evenly;
+    position: absolute;
+}
+.wars{
+    padding-left: 81rem;
+    padding-top: 28rem;
+    width: 50%;
+    justify-content: space-evenly;
+    position: absolute;
+   
+}
+.criar{
+    padding-left: 98rem;
+    padding-top: 40rem;
+    width: 50%;
+    justify-content: space-evenly;
+    position: absolute;
+   
+}
+.Kylo{
+    padding-left: 15rem;
+    padding-top: -35rem;
+    width: 100%;
+    position: relative;
+}
+main{
+    margin-top: -7.5%;
+    background-image: url("Imagens/sta\ uo\ robot.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    display: flex;
+
+}
+.caixa1{
+    padding-left: 20rem;
+    padding-top: -50rem;
+    width: 50%;
+    position: absolute;
+    
+}
+.caixa2{
+    padding-left: 57rem;
+    padding-top: 20rem;
+    width: 50%;
+
+    position: relative;
+
+}
