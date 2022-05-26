@@ -55,6 +55,7 @@ header{
     width: 20vw;
 }
 main{
+    position: relative;
     height: 100%;
 }
 .fundo-main{
@@ -64,9 +65,172 @@ main{
     background-repeat: no-repeat;
     background-size: contain;
 }
-.battle{
+.caixa-titulo h2{
+    font-size: 2vw;
+    color: white;
+    z-index: 3;
+    position: absolute;
+    left: 19%;
+    width: 10%;
+    top: 1.5%;
+}
+.texto1{
+    color: white;
+    position: absolute;
+    top: 7.5%;
+    left: 14.5%;
+    width: 18.5%;
+    z-index: 3;
+    font-size: 1vw;
+    font-family:'Open Sans', sans-serif;
+}
+    .botãocaixavermelha{
+    position: absolute;
+    top: 10.5%;
+    left: 17%;
+    display: flex;
+    width: 12%;
+    height: 1.5%;
+    z-index: 4;
+    border: 3px solid white;
+    border-radius: 6px;
+}
+    
+
+    button{
+        color:white;
+        padding: 1px 45px;
+        border-radius: 8px;
+        opacity: 0.1;
+    }
+    button a{
+        text-decoration: none;
+        font-size: 1vw;
+    }
+.data{
+    color: white;
+    font-weight: lighter;
+    font-size: 0.7vw;
+    font-family:'Open Sans', sans-serif;
+    position: absolute;
+    z-index: 4;
+    top: 12.5%;
+    left: 25%;
+    width: 13%;
+    height: 3%;
+}
+.titulo-sobre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 6%;
+        top: 5%;
+        position: absolute;
+        left: 54%;
+}
+.titulo-sobre h3{
+        text-transform: uppercase;
+        font-size: 1.5vw;
+        font-family:'Open Sans', sans-serif;
+}
+.linha{
+        width: 9%;
+        height: 0.1%;
+        background-color: black;
+        position: absolute;
+        left: 60.5%;
+        top: 9.5%;
+}
+.texto-sobre{
+        width: 39.5%;
+        position: absolute;
+        top:10.5%;
+        left: 30%;
+        display: flex;
+        text-align: right;
+        flex-direction: column;
+        height: 12%;
+}
+.texto-sobre p{
+        font-size: 1.1vw;
+        font-weight: bolder lighter;
+        align-items: flex-end;
+}
+.caixa-batalha{
+        width: 27%;
+        z-index: 1;
+        position: absolute;
+        top: 7.5%;
+        left: 70%; 
     
 }
+.linha2{
+        width: 78%;
+        height: 0.2%;
+        background-color: black;
+        position: absolute;
+        left: 13%;
+        top: 17%;
+}
+h1{
+        left: 50%; 
+        position: absolute; 
+        top: 19.5%;
+        font-size: 3vw;
+        width: 20%;
+}
+ul{
+        left: 40%; 
+        position: absolute;
+        top: -27%;
+        font-size: 1.5vw;
+        text-align: right;
+        list-style-type: none;
+        z-index: 5;
+}
+li{
+    padding: 20px;
+}
+.lista{
+    font-family: 'Open Sans', sans-serif;
+    position:absolute;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    font-size: 1.4vw;
+    width: 100%;
+    height: 60%;
+    justify-content: space-evenly;
+}
+.lista li:hover{
+    color: white;
+    line-height: 105%;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    transition: background-color .6s ease-in-out;
+    background-color:#c91e00;
+}
+    .sifh{
+        width: 40vw;
+        position: absolute;
+        left: 14%;
+        top: 18.5%;
+        z-index: 1; 
+    }
+    .rey{
+        width: 20vw;
+        position: absolute;
+        top: 19.5%;
+        left: 72%; 
+        z-index: 1;
+    }
+
+
+
 .caixa-preta{
     display: flex;
     position: relative;
@@ -173,34 +337,6 @@ main{
 }
 .bolder{
     font-weight: bolder;
-}
-.line-down{
-    display: flex;
-    justify-content: flex-end;
-    font-size: 2.3vw;
-    font-family: 'Open Sans', sans-serif;
-}
-.list{
-    font-family: 'Open Sans', sans-serif;
-    position:absolute;
-    top: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items:flex-end;
-    font-size: 1.4vw;
-    width: 100%;
-    height: 60%;
-    justify-content: space-evenly;
-}
-.list p:hover{
-    color: white;
-    line-height: 125%;
-    cursor: pointer;
-    display: flex;
-    justify-content: flex-end;
-    width: 90%;
-    transition: background-color .6s ease-in-out;
-    background-color:#c91e00;
 }
 .atributos{
     position: absolute;
@@ -312,13 +448,8 @@ footer{
 }
 .botões button:hover{
     cursor: pointer;
-    box-shadow: inset  -14vw 0  #D74430, 2px 0 2px #000, 0 4px 4px #707070;
+    box-shadow: inset  -14vw 0  #D74430, 2px 0 2px #000;
     transition: box-shadow 1s ease;
-    box-shadow: inset  -15vw 0  #D74430;
-    transition: box-shadow 1s ease-in-out;
-    -webkit-transition: box-shadow 1s ease-in-out;
-    -moz-transition: box-shadow 1s ease-in-out ;
-    -o-transition: box-shadow 1s ease-in-out;
 }
 .botões h2{
     color: white;
@@ -521,19 +652,16 @@ footer{
 .fundo-main{
     height: 260vw;
     }  
-
     .caixa-preta{
     flex-direction: column;
     height: 385vw;
     }
-
     .luke{
     flex-direction: column;
     width: 80%;
     left: 10%;
     top: 5.6%;
     }
-
     .caixa1{
     flex-direction: column;
     top: 18.3%;
@@ -544,7 +672,6 @@ footer{
    .caixa1 img{
        width: 80vw;
    }
-
     .caixa2{
     flex-direction: column;
     top: 44.6%;
@@ -554,7 +681,6 @@ footer{
     .caixa2 img{
         width: 80vw;
     }
-
     .caixa-img{
         top: 74%;
         left: 0;
@@ -566,7 +692,6 @@ footer{
         height: 30%;
         top: 90%;
     }
-
     .container-list{
         height: 30%;
         top: 87%;
@@ -575,13 +700,11 @@ footer{
     .estrutura{
         height: 7%;
     }
-
     .list{
         top: 15%;
         height:28%;
         left: 0%;
     }
-
     .atributos{
         top: 0.4%;
         left: 36%;
@@ -589,7 +712,6 @@ footer{
     .atributos h2{
         font-size: 4.5vw;
     }
-
     .rodape-main{
         width: 55%;
         top: 88.7%;   
@@ -597,7 +719,6 @@ footer{
     .rodape-main p{
         font-size: 2vw;
     }
-
     .gamer h2{
         font-size: 3.4vw;
         
@@ -607,7 +728,6 @@ footer{
         left: 51%;
         top: 91.4%;
     }
-
     .storm-cape{
         height: 140%;
         left: -7%;
@@ -627,7 +747,6 @@ footer{
         left: 10%;
         width: 73%;
     }
-
     .aplicativo{
         top: 150%;
         width: 80%;
@@ -636,7 +755,6 @@ footer{
     .aplicativo h2{
         font-size: 12vw;
     }
-
     .paragrafo{
         top: 190%;
         width: 79%;
@@ -647,7 +765,6 @@ footer{
         font-size: 3.7vw;
         font-weight:lighter;
     }
-
     .imgapp{
         top: 215%;
         width: 80%;
@@ -657,21 +774,18 @@ footer{
     .imgapp img{
         width: 39vw;
     }
-
     .linhafooter{
         top: 245%;
         width: 80%;
         height: 1.5%;
         left: 11%;
     }
-
     .logoStarwars{
         top: 265%;
         width: 80%;
         height: 2%;
         left: 11%;
     }
-
     .textofooter{
         top: 288%;
         width: 85%;
@@ -681,7 +795,6 @@ footer{
     .textofooter p{
         font-size: 3.4vw;
     }
-
     .rodape{
         width: 73%;
         top: 428%;
