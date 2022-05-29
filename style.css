@@ -84,7 +84,7 @@ main{
     font-size: 1vw;
     font-family:'Open Sans', sans-serif;
 }
-    .botãocaixavermelha{
+.bataored{
     position: absolute;
     top: 10.5%;
     left: 17%;
@@ -95,17 +95,12 @@ main{
     border: 3px solid white;
     border-radius: 6px;
 }
+button{
+    color: white;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center
     
-
-    button{
-        color:white;
-        padding: 1px 45px;
-        border-radius: 8px;
-        opacity: 0.1;
-    }
-    button a{
-        text-decoration: none;
-        font-size: 1vw;
     }
 .data{
     color: white;
@@ -127,7 +122,7 @@ main{
         height: 6%;
         top: 5%;
         position: absolute;
-        left: 54%;
+        left: 53%;
 }
 .titulo-sobre h3{
         text-transform: uppercase;
@@ -143,10 +138,10 @@ main{
         top: 9.5%;
 }
 .texto-sobre{
-        width: 39.5%;
+        width: 30%;
         position: absolute;
         top:10.5%;
-        left: 30%;
+        left: 39%;
         display: flex;
         text-align: right;
         flex-direction: column;
@@ -163,7 +158,6 @@ main{
         position: absolute;
         top: 7.5%;
         left: 70%; 
-    
 }
 .linha2{
         width: 78%;
@@ -185,12 +179,12 @@ ul{
         position: absolute;
         top: -27%;
         font-size: 1.5vw;
-        text-align: right;
+        text-align: right;  
         list-style-type: none;
         z-index: 5;
 }
 li{
-    padding: 20px;
+    padding: 4%;
 }
 .lista{
     font-family: 'Open Sans', sans-serif;
@@ -211,7 +205,7 @@ li{
     display: flex;
     justify-content: flex-end;
     width: 90%;
-    transition: background-color .6s ease-in-out;
+    transition: background-color .10s ease-in-out;
     background-color:#c91e00;
 }
     .sifh{
@@ -228,9 +222,6 @@ li{
         left: 72%; 
         z-index: 1;
     }
-
-
-
 .caixa-preta{
     display: flex;
     position: relative;
@@ -401,6 +392,9 @@ li{
 .stortm img{
     width: 25vw;
 }
+h3{
+    font-size: 2.3vw;
+}
 footer{
     position: relative;
     display: flex;
@@ -434,7 +428,6 @@ footer{
     flex-direction: column;
     height: 28%;
     background-color: black;
-
 }
 .botões button{
     width: 100%;
@@ -503,6 +496,11 @@ footer{
     height: 2%;
     background-color:black;
 }
+.line-first:hover{
+    cursor: pointer;
+    box-shadow: inset  -14vw 0  #D74430, 2px 0 4px #000;
+    transition: box-shadow 1s ease;
+}
 .escolher{
     display: flex;
     flex-direction: column;
@@ -527,7 +525,6 @@ footer{
     position: absolute;
     left: 80%;
 }
-
 .caixafinal{
     background-color: #FF5A56;
     height: 39vw;
@@ -633,7 +630,33 @@ footer{
     font-size: 0.8vw;
 }
 /*----------@media---------*/
-@media(max-width:599px){
+@media(max-width:754px){
+    .bataored{
+        position: absolute;
+        top: 10.5%;
+        left: 16%;
+        height: 1.5%;
+        width: 13%;
+        height: 1.8%;
+        z-index: 4;
+        border: 3px solid white;
+        border-radius: 6px;
+    }    
+}
+@media(max-width:660px){
+    .bataored{
+        position: absolute;
+        top: 10.5%;
+        left: 16%;
+        height: 1.5%;
+        width: 15%;
+        height: 1.8%;
+        z-index: 4;
+        border: 3px solid white;
+        border-radius: 6px;
+    }
+}
+@media(max-width:600px){
     .criar{
         position: absolute;
         top: 71%;
@@ -649,12 +672,180 @@ footer{
     }
 }
 @media(max-width:600px){
-.fundo-main{
-    height: 260vw;
-    }  
+    main{
+        position: relative;
+        height: 100%;
+    }
+    .fundo-main{
+        position: relative;
+        height: 150vw;
+        background-image: url(imagnesSW/sta\ uo\ robot.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .caixa-titulo h2{
+        font-size: 6vw;
+        color: white;
+        z-index: 3;
+        position: absolute;
+        left: 48%;
+        width: 28%;
+        top: 3.5%;
+    }
+    .texto1{
+        color: white;
+        position: absolute;
+        top: 7%;
+        left: 40%;
+        width: 50%;
+        z-index: 3;
+        font-size: 4vw;
+        font-family:'Open Sans', sans-serif;
+    }
+    .bataored{
+        position: absolute;
+        top: 11%;
+        left: 47%;
+        display: flex;
+        width: 30%;
+        height: 1.5%;
+        z-index: 4;
+        border: 3px solid white;
+        border-radius: 6px;
+        font-size: 4vw;
+    }
+    button{
+        color: white;
+        background-color: transparent;
+        justify-content: center;
+        align-items: center
+        
+    }
+    .data{
+        color: white;
+        font-weight: lighter;
+        font-size: 2vw;
+        font-family:'Open Sans', sans-serif;
+        position: absolute;
+        z-index: 4;
+        top: 14%;
+        left: 53%;
+        width: 25%;
+        height: 3%;
+    }
+    .caixa-batalha{
+        width: 65%;
+        z-index: 1;
+        position: absolute;
+        top: 18.5%;
+        left: 30%;   
+    }
+    .titulo-sobre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 6%;
+        top: 22.5%;
+        position: absolute;
+        left: 66%;
+    }
+    .titulo-sobre h3{
+        text-transform: uppercase;
+        font-size: 3.5vw;
+        font-family:'Open Sans', sans-serif;
+    }
+    .linha{
+        width: 35%;
+        height: 0.1%;
+        background-color: black;
+        position: absolute;
+        left: 60.5%;
+        top: 26%;
+    }
+    .texto-sobre{
+       width: 70%;
+       position: absolute;
+       top:26.5%;
+       left: 25%;
+       display: flex;
+       text-align: right;
+       flex-direction: column;
+       height: 12%;
+    }
+    .texto-sobre p{
+       font-size: 3.5vw;
+       font-weight: bolder lighter;
+       align-items: flex-end;
+    }
+    .linha2{
+        width: 78%;
+        height: 0.2%;
+        background-color: gray;
+        position: absolute;
+        left: 17.5%;
+        top: 31.5%;
+    }
+    h1{
+        left: 50%; 
+        position: absolute; 
+        top: 32.5%;
+        font-size: 3vw;
+        width: 20%;
+        text-align: right;
+    }
+    ul{
+        left: 40%; 
+        position: absolute;
+        top: -10%;
+        font-size: 1.5vw;
+        text-align: right;
+        list-style-type: none;
+        z-index: 5;
+    }
+    li{
+       padding: 10px;
+    }
+    .lista{
+       font-family: 'Open Sans', sans-serif;
+       position:absolute;
+       top: 40%;
+       display: flex;
+       flex-direction: column;
+       align-items:flex-end;
+       font-size: 1.4vw;
+       width: 100%;
+       height: 60%;
+       justify-content: space-evenly;
+    }
+    .lista li:hover{
+       color: white;
+       line-height: 105%;
+       cursor: pointer;
+       display: flex;
+       justify-content: flex-end;
+       width: 100%;
+       transition: background-color .6s ease-in-out;
+       background-color:#c91e00;
+    }
+    .sifh{
+        width: 40vw;
+        position: absolute;
+        left: 8%;
+        top: 34.5%;
+        z-index: 1; 
+    }
+    .rey{
+        width: 20vw;
+        position: absolute;
+        top: 34.5%;
+        left: 72%; 
+        z-index: 1;
+    }
     .caixa-preta{
     flex-direction: column;
     height: 385vw;
+    margin-top: 100%;
     }
     .luke{
     flex-direction: column;
@@ -687,6 +878,123 @@ footer{
         width: 100%;
     }
 }
+@media(max-width:600px){
+    .botões{
+        width: 290%;
+        height: 60%;
+        top: -10%;
+        left: -125%;
+    }
+    .textodownload1{
+        align-items: center;
+        width: 40vw;
+        
+    }
+    .textodownload1 p{
+        font-size: 3vw;
+    }
+    .download{
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 13.4%;
+        height: 68%;
+        top: 22%;
+        position: absolute;
+        left: 60%;
+    }
+    .boxmenu{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 28%;
+        background-color: black;
+    }
+    .botões button{
+        width: 100%;
+        height: 100%;
+        font-size: 3vw;
+        color: white;
+        background-color: black;
+    }
+    .boxmenu button{
+        font-family: "Sovereign" lighter;
+    }
+    .botões button:hover{
+        cursor: pointer;
+        box-shadow: inset  -40vw 0  #D74430, 2px 0 10px #000;
+        transition: box-shadow 1s ease;
+    }
+    .botões h2{
+        color: white;
+        font-size: 3.4vw;
+        font-weight: lighter;
+    }
+    .botões h3{
+        font-size: 3.4vw;
+        font-weight: 1000;
+    }
+    .textodownload2{
+        align-items: center;
+        width: 50vw;
+    }
+    .textodownload2 p{
+        font-size: 3vw;
+    }
+    .escolher{
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        width: 13.4%;
+        height: 68%;
+        top:95%;
+        position: absolute;
+        left: 60%;
+    }
+    .textodownload3{
+        align-items: center;
+        width: 50vw;
+    }
+    .textodownload3 p{
+        font-size: 3vw;
+    }
+    .explorar{
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        width: 13.4%;
+        height: 68%;
+        top: 175%;
+        position: absolute;
+        left: 60%;
+    }
+    .line-first{
+        position: absolute;
+        top: 99%;
+        width: 45%;
+        height: 3%;
+        background-color:black;
+    }
+    .line-first:hover{
+        cursor: pointer;
+        box-shadow: inset  -18vw 0  #D74430, 2px 0 4px #000;
+        transition: box-shadow 1s ease;
+    }
+    .stortm{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35%;
+        top: 92%;
+        width: 30vw;
+        left: -6%;    
+    }
+    .stortm img{
+        width: 75vw;
+    }
+
+
 @media(max-width:600px){
     .container-list{
         height: 30%;
