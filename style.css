@@ -115,73 +115,73 @@ button{
     height: 3%;
 }
 .titulo-sobre{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 20%;
-        height: 6%;
-        top: 5%;
-        position: absolute;
-        left: 53%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 6%;
+    top: 5%;
+    position: absolute;
+    left: 53%;
 }
 .titulo-sobre h3{
-        text-transform: uppercase;
-        font-size: 1.5vw;
-        font-family:'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    font-family:'Open Sans', sans-serif;
 }
 .linha{
-        width: 9%;
-        height: 0.1%;
-        background-color: black;
-        position: absolute;
-        left: 60.5%;
-        top: 9.5%;
+    width: 9%;
+    height: 0.1%;
+    background-color: black;
+    position: absolute;
+    left: 60.5%;
+    top: 9.5%;
 }
 .texto-sobre{
-        width: 30%;
-        position: absolute;
-        top:10.5%;
-        left: 39%;
-        display: flex;
-        text-align: right;
-        flex-direction: column;
-        height: 12%;
+    width: 30%;
+    position: absolute;
+    top:10.5%;
+    left: 39%;
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    height: 12%;
 }
 .texto-sobre p{
-        font-size: 1.1vw;
-        font-weight: bolder lighter;
-        align-items: flex-end;
+    font-size: 1.1vw;
+    font-weight: bolder lighter;
+    align-items: flex-end;
 }
 .caixa-batalha{
-        width: 27%;
-        z-index: 1;
-        position: absolute;
-        top: 7.5%;
-        left: 70%; 
+    width: 27%;
+    z-index: 1;
+    position: absolute;
+    top: 7.5%;
+    left: 70%; 
 }
 .linha2{
-        width: 78%;
-        height: 0.2%;
-        background-color: black;
-        position: absolute;
-        left: 13%;
-        top: 17%;
+    width: 78%;
+    height: 0.2%;
+    background-color: black;
+    position: absolute;
+    left: 13%;
+    top: 17%;
 }
 h1{
-        left: 50%; 
-        position: absolute; 
-        top: 19.5%;
-        font-size: 3vw;
-        width: 20%;
+    left: 50%; 
+    position: absolute; 
+    top: 19.5%;
+    font-size: 3vw;
+    width: 20%;
 }
 ul{
-        left: 40%; 
-        position: absolute;
-        top: -27%;
-        font-size: 1.5vw;
-        text-align: right;  
-        list-style-type: none;
-        z-index: 5;
+    left: 40%; 
+    position: absolute;
+    top: -27%;
+    font-size: 1.5vw;
+    text-align: right;  
+    list-style-type: none;
+    z-index: 5;
 }
 li{
     padding: 4%;
@@ -200,28 +200,27 @@ li{
 }
 .lista li:hover{
     color: white;
-    line-height: 105%;
     cursor: pointer;
     display: flex;
     justify-content: flex-end;
     width: 90%;
-    transition: background-color .10s ease-in-out;
+    transition: all 3s ease-out;    
     background-color:#c91e00;
 }
-    .sifh{
-        width: 40vw;
-        position: absolute;
-        left: 14%;
-        top: 18.5%;
-        z-index: 1; 
-    }
-    .rey{
-        width: 20vw;
-        position: absolute;
-        top: 19.5%;
-        left: 72%; 
-        z-index: 1;
-    }
+.sifh{
+    width: 40vw;
+    position: absolute;
+    left: 14%;
+    top: 18.5%;
+    z-index: 1; 
+}
+.rey{
+    width: 20vw;
+    position: absolute;
+    top: 19.5%;
+    left: 72%; 
+    z-index: 1;
+}
 .caixa-preta{
     display: flex;
     position: relative;
@@ -275,21 +274,29 @@ li{
     cursor: pointer;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url(imagnesSW/Grupo\ novos\ graficos.png);
+    opacity: 5;
 }
 .batalha:hover{
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
+    background-image: url(imagnesSW/Grupo\ novos\ graficos.png);
+    opacity: 05;
 }
 .naves:hover{
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
+    background-image: url(imagnesSW/Grupo\ novos\ graficos.png);
+    opacity: 57;
 }
 .stormtrup:hover{
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
+    background-image: url(imagnesSW/Grupo\ novos\ graficos.png);
+    opacity: 5;
 }
 .luke:hover{
     cursor: pointer;
@@ -444,23 +451,14 @@ footer{
     box-shadow: inset  -14vw 0  #D74430, 2px 0 2px #000;
     transition: box-shadow 1s ease;
 }
-.botões h2{
-    color: white;
-    font-size: 1.4vw;
+.botões h3{
+    color: #000;
+    font-size: 2vw;
     font-weight: lighter;
 }
-.botões h1{
+.botões h3:hover{
     font-size: 2vw;
     font-weight: 900;
-}
-.textodownload{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 10vw;
-}
-.textodownload p{
-    font-size: 1vw;
 }
 .textodownload1{
     display: flex;
@@ -471,6 +469,18 @@ footer{
 .textodownload1 p{
     font-size: 1vw;
 }
+.escolher{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 13.4%;
+    height: 68%;
+    top: 20%;
+    position: absolute;
+    left: 58%;
+}
 .textodownload2{
     display: flex;
     flex-direction: column;
@@ -479,6 +489,18 @@ footer{
 }
 .textodownload2 p{
     font-size: 1vw;
+}
+.explorar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 13.4%;
+    height: 68%;
+    top: 20%;
+    position: absolute;
+    left: 80%;
 }
 .textodownload3{
     display: flex;
@@ -500,30 +522,6 @@ footer{
     cursor: pointer;
     box-shadow: inset  -14vw 0  #D74430, 2px 0 4px #000;
     transition: box-shadow 1s ease;
-}
-.escolher{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
-    width: 13.4%;
-    height: 68%;
-    top: 20%;
-    position: absolute;
-    left: 58%;
-}
-.explorar{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
-    width: 13.4%;
-    height: 68%;
-    top: 20%;
-    position: absolute;
-    left: 80%;
 }
 .caixafinal{
     background-color: #FF5A56;
@@ -815,17 +813,16 @@ footer{
        align-items:flex-end;
        font-size: 1.4vw;
        width: 100%;
-       height: 60%;
+       height: 62%;
        justify-content: space-evenly;
     }
     .lista li:hover{
        color: white;
-       line-height: 105%;
        cursor: pointer;
        display: flex;
        justify-content: flex-end;
        width: 100%;
-       transition: background-color .6s ease-in-out;
+       transition: all 3s ease-out;
        background-color:#c91e00;
     }
     .sifh{
@@ -843,31 +840,31 @@ footer{
         z-index: 1;
     }
     .caixa-preta{
-    flex-direction: column;
-    height: 385vw;
-    margin-top: 100%;
+        flex-direction: column;
+        height: 385vw;
+        margin-top: 100%;
     }
     .luke{
-    flex-direction: column;
-    width: 80%;
-    left: 10%;
-    top: 5.6%;
+        flex-direction: column;
+        width: 80%;
+        left: 10%;
+        top: 5.6%;
     }
     .caixa1{
-    flex-direction: column;
-    top: 18.3%;
-    left: 10%;
-    width: 80vw;
-    height: 20%;
+        flex-direction: column;
+        top: 18.3%;
+        left: 10%;
+        width: 80vw;
+        height: 20%;
    }
    .caixa1 img{
-       width: 80vw;
+        width: 80vw;
    }
     .caixa2{
-    flex-direction: column;
-    top: 44.6%;
-    left: 10%;
-    width: 80%;
+        flex-direction: column;
+        top: 44.6%;
+        left: 10%;
+        width: 80%;
     }
     .caixa2 img{
         width: 80vw;
@@ -879,6 +876,46 @@ footer{
     }
 }
 @media(max-width:600px){
+    .container-list{
+        height: 30%;
+        top: 90%;
+    }
+    .container-list{
+        height: 30%;
+        top: 87%;
+        left: 35%;
+    }
+    .estrutura{
+        height: 7%;
+    }
+    .list{
+        top: 15%;
+        height:28%;
+        left: 0%;
+    }
+    .atributos{
+        top: 0.4%;
+        left: 36%;
+    } 
+    .atributos h2{
+        font-size: 4.5vw;
+    }
+    .rodape-main{
+        width: 55%;
+        top: 88.7%;   
+    }
+    .rodape-main p{
+        font-size: 2vw;
+    }
+    .gamer h2{
+        font-size: 3.4vw;
+        
+    }
+    .gamer{
+        width: 30%;
+        left: 51%;
+        top: 91.4%;
+    }
     .botões{
         width: 290%;
         height: 60%;
@@ -925,14 +962,13 @@ footer{
         box-shadow: inset  -40vw 0  #D74430, 2px 0 10px #000;
         transition: box-shadow 1s ease;
     }
-    .botões h2{
-        color: white;
-        font-size: 3.4vw;
-        font-weight: lighter;
-    }
     .botões h3{
-        font-size: 3.4vw;
-        font-weight: 1000;
+        color: #000;
+        font-size: 4vw;
+    }
+    .botões h3:hover{
+        font-size: 4.4vw;
+        font-weight: 900;
     }
     .textodownload2{
         align-items: center;
@@ -992,57 +1028,6 @@ footer{
     }
     .stortm img{
         width: 75vw;
-    }
-
-
-@media(max-width:600px){
-    .container-list{
-        height: 30%;
-        top: 90%;
-    }
-    .container-list{
-        height: 30%;
-        top: 87%;
-        left: 35%;
-    }
-    .estrutura{
-        height: 7%;
-    }
-    .list{
-        top: 15%;
-        height:28%;
-        left: 0%;
-    }
-    .atributos{
-        top: 0.4%;
-        left: 36%;
-    } 
-    .atributos h2{
-        font-size: 4.5vw;
-    }
-    .rodape-main{
-        width: 55%;
-        top: 88.7%;   
-    }
-    .rodape-main p{
-        font-size: 2vw;
-    }
-    .gamer h2{
-        font-size: 3.4vw;
-        
-    }
-    .gamer{
-        width: 30%;
-        left: 51%;
-        top: 91.4%;
-    }
-    .storm-cape{
-        height: 140%;
-        left: -7%;
-        top: 40%;
-    }
-    .storm-cape img{
-        width: 75vw; 
     }
     .caixafinal{
         height: 220%;
