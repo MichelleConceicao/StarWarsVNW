@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -122,7 +123,7 @@ button{
     height: 6%;
     top: 5%;
     position: absolute;
-    left: 53%;
+    left: 54%;
 }
 .titulo-sobre h3{
     text-transform: uppercase;
@@ -134,7 +135,7 @@ button{
     height: 0.1%;
     background-color: black;
     position: absolute;
-    left: 60.5%;
+    left: 60%;
     top: 9.5%;
 }
 .texto-sobre{
@@ -153,7 +154,7 @@ button{
     align-items: flex-end;
 }
 .caixa-batalha{
-    width: 27%;
+    width: 22%;
     z-index: 1;
     position: absolute;
     top: 7.5%;
@@ -168,14 +169,16 @@ button{
     top: 17%;
 }
 h1{
-    left: 50%; 
+    left: 48.5%; 
     position: absolute; 
     top: 19.5%;
     font-size: 3vw;
     width: 20%;
+    text-align: end;
 }
 ul{
-    left: 40%; 
+    width: 40%;
+    left: 30%; 
     position: absolute;
     top: -27%;
     font-size: 1.5vw;
@@ -184,7 +187,7 @@ ul{
     z-index: 5;
 }
 li{
-    padding: 4%;
+    padding: 3%;
 }
 .lista{
     font-family: 'Open Sans', sans-serif;
@@ -302,6 +305,8 @@ li{
     cursor: pointer;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url(imagnesSW/Grupo\ novos\ graficos.png);
+    opacity: 5;
 }
 .caixa-img{
     position: absolute;
@@ -782,18 +787,21 @@ footer{
         background-color: gray;
         position: absolute;
         left: 17.5%;
-        top: 31.5%;
+        top: 32%;
     }
     h1{
-        left: 50%; 
+        left: 51%; 
         position: absolute; 
         top: 32.5%;
         font-size: 3vw;
         width: 20%;
         text-align: right;
     }
+    .strong{
+        font-size: 7vw;
+    }
     ul{
-        left: 40%; 
+        left: 33%; 
         position: absolute;
         top: -10%;
         font-size: 1.5vw;
@@ -802,7 +810,7 @@ footer{
         z-index: 5;
     }
     li{
-       padding: 10px;
+       padding: 9px;
     }
     .lista{
        font-family: 'Open Sans', sans-serif;
